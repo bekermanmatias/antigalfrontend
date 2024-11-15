@@ -124,6 +124,7 @@ const ProductListContainer = () => {
 
     fetchProductsAndCategories();
   }, [filter]);
+  
 
   // Alternar el estado del dropdown de categorías en mobile
   const toggleDropdown = () => {
