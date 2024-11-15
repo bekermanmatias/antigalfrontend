@@ -1,0 +1,726 @@
+@media (min-width: 350px) {
+  .mobile-menu .user-icon-container .user-menu li {
+    font-size: 1rem;
+  }
+  .terceraSection{
+    
+    .contenedorFondo{
+        
+        .fondoVerde {
+            
+            min-height: 1250px !important;
+        }
+    }
+  }
+}
+
+@media (min-width: 420px) {
+  .mobile-menu .user-icon-container .user-menu li {
+    font-size: 1.3rem;
+  }
+  .header .header-mobile {
+    padding: 2rem 1.7rem !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .pistachosContenedor {
+
+    left: 6rem !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .deenergiaContenedor {
+
+    left: 6rem !important;
+  }
+  .terceraSection{
+    
+    .contenedorFondo{
+        
+        .fondoVerde {
+            
+            min-height: 1150px !important;
+            max-height: 1900px !important;
+        }
+    }
+  }
+}
+@media (min-width: 580px) {
+  .header {
+    .header-mobile {
+      padding: 2.5rem 3rem !important;
+    }
+  }
+  .home_container .terceraSection .contenedorFrutosSecos {
+      padding: 2rem 4rem !important;
+      overflow: hidden;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .pistachosContenedor {
+
+    left: 8rem !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .deenergiaContenedor {
+
+    left: 8rem !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .pistachosContenedor .parrafo {
+    width: 65% !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .almendrasContenedor .parrafo {
+    width: 65% !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .maniorganicoContenedor .parrafo {
+    width: 65% !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .deenergiaContenedor .parrafo {
+    width: 65% !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .deenergiaContenedor {
+    left: 14rem !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .pistachosContenedor {
+    left: 14rem !important;
+  }
+}
+@media (min-width: 630px) {
+  .home_container .terceraSection .contenedorFrutosSecos .almendrasContenedor {
+    padding-top: 12rem !important;
+  }
+  .home_container .terceraSection .contenedorFrutosSecos .deenergiaContenedor {
+    padding-bottom: 3rem; 
+  }
+}
+
+@media (min-width: 700px) {
+
+  .header {
+    .header-mobile{
+      .logo{
+        width: 200px !important;
+      }
+    }
+    
+  }
+  .home_container {
+    .primeraSection{
+      display: flex;
+      flex-direction: column;
+      .hojasUno{
+        width: 120px !important;
+      }
+      .hojasDos{
+        width: 150px !important;
+      }
+      .subtitulo{
+        font-size: 2rem !important;
+      }
+      .titulo{
+        margin-top: 1rem;
+        font-size: 2.4rem !important;
+        width: 85%;
+        align-self: center;
+      }
+      .contenedorFrasco{
+        
+        .imagenFrasco{
+          width: 450px;
+        }
+      }
+      .botonCompraContainer{
+        .botonComprar{
+          bottom: 5rem !important;
+          width: 10rem;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+
+    .terceraSection {
+      .contenedorFrutosSecos {
+        .almendrasContenedor{
+          padding-top: 7rem;
+          padding-right: 2.5rem;
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2rem !important;
+          }
+          .parrafo{
+            font-size: 1.2rem;
+            width: 60% !important;
+          }
+        }
+        .pistachosContenedor{
+          left: 18rem !important;
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2rem !important;
+          }
+          .parrafo{
+            font-size: 1.2rem;
+            width: 60% !important;
+          }
+        }
+        .maniorganicoContenedor{
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2rem !important;
+          }
+          .parrafo{
+            font-size: 1.2rem;
+            width: 60% !important;
+          }
+        }
+        .deenergiaContenedor{
+          left: 18rem !important;
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2rem !important;
+          }
+          .parrafo{
+            font-size: 1.2rem;
+            width: 60% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .home_container{
+    .terceraSection {
+      .contenedorFrutosSecos {
+        .almendrasContenedor{
+          padding-top: 7rem;
+          padding-right: 2.5rem;
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2.7rem !important;
+          }
+          .parrafo{
+            font-size: 1.4rem !important;
+            width: 60% !important;
+          }
+        }
+        .pistachosContenedor{
+          left: 21rem !important;
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2.7rem !important;
+          }
+          .parrafo{
+            font-size: 1.4rem !important;
+            width: 60% !important;
+          }
+        }
+        .maniorganicoContenedor{
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2.7rem !important;
+          }
+          .parrafo{
+            font-size: 1.4rem !important;
+            width: 60% !important;
+          }
+        }
+        .deenergiaContenedor{
+          left: 21rem !important;
+          .contenedorIconos{
+            .icono{
+              width: 3.7rem !important; 
+              
+            }
+            .circuloVerdeOscuro{
+              width: 2.5rem;
+              height: 2.5rem;
+              position: relative;
+              left: 0.5rem;
+            }
+          }
+          .titulo{
+            font-size: 2.7rem !important;
+          }
+          .parrafo{
+            font-size: 1.4rem !important;
+            width: 60% !important;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media (min-width: 900px) {
+  .header-desktop {
+    display: flex;
+    padding: 2rem;
+    .nav-horizontal {
+      display: flex;
+      li {
+        a {
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+  .home_container{
+    .terceraSection {
+      .contenedorFrutosSecos {
+        .pistachosContenedor{
+          left: 25rem !important;
+        }
+        .deenergiaContenedor{
+          left: 25.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .header-desktop {
+    display: flex;
+    padding: 2rem 3rem !important;
+    .nav-horizontal {
+      display: flex;
+      li {
+        a {
+          font-size: 1.2rem !important;
+          padding: 0.47rem;
+        }
+      }
+    }
+  }
+
+  .header-desktop {
+    .sessionContainer {
+      .user-menu {
+        position: absolute;
+        top: 80px;
+        right: 60px !important;
+      }
+    }
+  }
+  .home_container{
+    .primeraSection {
+      .titulo{
+        margin-bottom: 0rem;
+        margin-top: 0;
+        padding-top: 0 !important;
+      }
+      .frascoYtitulo{
+        user-select: none;      /* Impide que la imagen sea seleccionada */
+            pointer-events: none;
+        display: flex;
+        flex-direction: column-reverse;
+        .contenedorFrasco {
+          .imagenFrasco{
+            width: 750px !important;
+            
+          }
+        }
+      }
+      .botonCompraContainer{
+        .botonComprar{
+          bottom: 28rem !important;
+          user-select: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .segundaSection.fondoBlanco{
+      padding-top: 0;
+      margin-bottom: 4rem;
+      .carousel{
+        flex-direction: column;
+        .offerCard{
+          box-shadow: none;
+          &.row {
+            flex-direction: row; // Estilo normal para desktop
+          }
+    
+          &.row-reverse {
+            flex-direction: row-reverse; // Cambiar el orden de los elementos
+          }
+          img{
+            width: 350px;
+          }
+        }
+      }
+      .navigation-buttons{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        position: relative;
+        bottom: 30rem;
+        img{
+          opacity: 0.6;
+          width: 90px;
+          cursor: pointer;
+          &.prevButton{
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180de);
+            -moz-transform: rotate(180de);
+            -ms-transform: rotate(180de);
+            -o-transform: rotate(180de);
+          }
+
+        }
+      }
+    }
+    .terceraSection {
+      .contenedorFondo{
+        display: flex;
+        align-items: center;
+        .contenedorFrutosSecos {
+          display: flex;
+          flex-wrap: wrap;
+          padding-right: 0rem !important;
+          .pistachosContenedor {
+            flex: 1 1 48%;
+            left: 0rem !important;
+            padding-top: 5rem !important;
+            width: fit-content !important;
+            .titulo{
+              font-size: 2.2rem !important;
+            }
+            .parrafo{
+              font-size: 1.1rem !important;
+              width: 60% !important;
+            }
+          }
+          .deenergiaContenedor{
+            flex: 1 1 48%;
+            left: 0rem !important;
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+            .titulo{
+              font-size: 2.2rem !important;
+            }
+            .parrafo{
+              font-size: 1.1rem !important;
+              width: 60% !important;
+            }
+          }
+          .almendrasContenedor{
+            flex: 1 1 48%;
+            padding-top: 4.3rem !important;
+            .titulo{
+              font-size: 2.2rem !important;
+            }
+            .parrafo{
+              font-size: 1.1rem !important;
+              width: 60% !important;
+            }
+          }
+          .maniorganicoContenedor{
+            flex: 1 1 48%;
+            padding-top: 5rem !important;
+            .titulo{
+              font-size: 2.2rem !important;
+            }
+            .parrafo{
+              font-size: 1.1rem !important;
+              width: 60% !important;
+            }
+          }
+        }
+        .fotoFrutos{
+          
+          margin-right: 4rem;
+        }
+      }
+      
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-desktop {
+    .logo {
+      width: 240px !important; 
+    }
+    .nav-horizontal {
+      li {
+        a {
+          font-size: 1.4rem !important;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .widgets {
+      div {
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+      }
+      .lupa {
+        width: 45px !important;
+      }
+      .carrito {
+        width: 45px !important;
+      }
+    }
+    .sessionContainer {
+      .user-menu {
+        top: 90px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  .header-desktop {
+    display: flex;
+    padding: 2rem 4.5rem !important;
+    .logo {
+      height: 73px !important;
+    }
+    .nav-horizontal {
+      li {
+        a {
+          font-size: 1.35rem !important;
+          padding: 1rem;
+        }
+      }
+    }
+    .widgets {
+      div {
+        margin-left: 0.6rem !important;
+        margin-right: 0.6rem !important;
+      }
+      .lupa {
+        width: 50px !important;
+      }
+      .carrito {
+        width: 50px !important;
+      }
+    }
+    .sessionContainer {
+      .user-menu {
+        top: 100px !important;
+        right: 90px !important;
+      }
+      .user-icon-container {
+        .user-icon {
+          width: 50px !important;
+          height: 50px !important;
+          padding: 0.5rem !important;
+        }
+      }
+    }
+  }
+  .home_container{
+    .primeraSection{
+      
+          .titulo{
+            margin-bottom: 2rem;
+            margin-top: 0;
+            padding-top: 0 !important;
+          }
+          .frascoYtitulo{
+            
+            .contenedorFrasco {
+              .imagenFrasco{
+                width: 1000px !important;
+                
+              }
+            }
+            
+          }
+          .botonCompraContainer{
+            .botonComprar{
+              position: relative;
+              bottom: 36.5rem !important;
+            }
+          }
+    }
+    .segundaSection.fondoBlanco{
+      margin-bottom: 4rem;
+      .carousel{
+        flex-direction: column;
+        .offerCard{
+          box-shadow: none;
+          &.row {
+            flex-direction: row; // Estilo normal para desktop
+          }
+    
+          &.row-reverse {
+            flex-direction: row-reverse; // Cambiar el orden de los elementos
+          }
+          img{
+            width: 450px;
+          }
+        }
+      }
+      .navigation-buttons{
+        
+        padding-left: 6rem;
+        padding-right: 6rem;
+        
+      }
+    }
+    .terceraSection {
+      .contenedorFondo{
+        display: flex;
+        align-items: center;
+        .contenedorFrutosSecos {
+          display: flex;
+          flex-wrap: wrap;
+          padding-right: 0rem !important;
+          .pistachosContenedor {
+            flex: 1 1 48%;
+            left: 0rem !important;
+            padding-top: 12rem !important;
+            width: fit-content !important;
+            .titulo{
+              font-size: 2.7rem !important;
+            }
+            .parrafo{
+              font-size: 1.4rem !important;
+              width: 60% !important;
+            }
+          }
+          .deenergiaContenedor{
+            flex: 1 1 48%;
+            left: 0rem !important;
+            padding-top: 8rem !important;
+            padding-bottom: 8rem !important;
+            .titulo{
+              font-size: 2.7rem !important;
+            }
+            .parrafo{
+              font-size: 1.4rem !important;
+              width: 60% !important;
+            }
+          }
+          .almendrasContenedor{
+            flex: 1 1 48%;
+            padding-top: 12rem !important;
+            .titulo{
+              font-size: 2.7rem !important;
+            }
+            .parrafo{
+              font-size: 1.4rem !important;
+              width: 60% !important;
+            }
+          }
+          .maniorganicoContenedor{
+            flex: 1 1 48%;
+            padding-top: 8rem !important;
+            .titulo{
+              font-size: 2.7rem !important;
+            }
+            .parrafo{
+              font-size: 1.4rem !important;
+              width: 60% !important;
+            }
+          }
+        }
+        .fotoFrutos{
+          width: 450px !important;
+          height: 300px;
+          margin-right: 4rem;
+        }
+      }
+      
+    }
+  }
+}
+@media (min-width: 1570px) {
+  .header-desktop {
+    .widgets {
+      div {
+        margin-left: 1.3rem !important;
+        margin-right: 1.3rem !important;
+      }
+      .lupa {
+        width: 50px !important;
+      }
+      .carrito {
+        width: 50px !important;
+      }
+    }
+    .sessionContainer {
+      .user-menu {
+        right: 100px !important;
+      }
+    }
+  }
+}

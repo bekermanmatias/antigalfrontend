@@ -1,0 +1,108 @@
+@use "../../abstract/variables" as variables;
+@use "../../abstract/mixins" as mixins;
+.content h2{
+    color: mixins.theme(primary-black-color);
+}
+.admin-user {
+  margin-top: 10px;
+  .search-filter-container {
+    margin-left: auto;
+    justify-content: right;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+    input {
+      padding: 10px;
+    }
+    select {
+      padding: 10px;
+    }
+  }
+  .user-list {
+    max-height: 400px; 
+    overflow-y: auto;
+  }
+  table {
+    width: 100%;
+    overflow-y: auto;
+    thead {
+      background-color: mixins.theme(
+        primary-color
+      ); // Color de fondo del encabezado
+      color: #ffffff;
+
+      th {
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+    }
+    tbody {
+      tr {
+        background-color: white;
+        &:nth-child(even) {
+          background-color: #e3e3e3; // Color alternativo para filas pares
+        }
+
+        &:hover {
+          background-color: #c8c8c8; // Color de fondo al pasar el cursor
+          cursor: pointer;
+        }
+      }
+
+      td {
+        padding: 0.75rem;
+        text-align: left;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #ddd;
+        color: #333;
+
+        &.action {
+          display: flex;
+          gap: 0.5rem;
+          justify-content: space-evenly;
+          button {
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.85rem;
+
+            &.role-toggle-btn {
+              padding: 6px 12px;
+              font-size: 0.9rem;
+              cursor: pointer;
+              border: none;
+              color: #fff;
+              border-radius: 4px;
+              transition: background-color 0.2s ease;
+
+              &.admin {
+                background-color: #ff7043;
+
+                &:hover {
+                  background-color: #e64a19;
+                }
+              }
+
+              &.user {
+                background-color: #4caf50;
+
+                &:hover {
+                  background-color: #388e3c;
+                }
+              }
+            }
+
+            &.delete-btn {
+              background-color: #e74c3c;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+// src/abstract/variables.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$font: 'Roboto', sans-serif;
+
+// Colores para el tema claro
+$theme-light: (
+  primary-color: #74873D,        // Verde principal
+  primary-color-hover: darken(#74873D, 10%),
+  secondary-color: #ED8B00,      // Naranja secundario
+  secondary-color-hover: darken(#ED8B00, 10%),
+  primary-black-color: #222222,
+  primary-black-color-hover: #454545,
+  primary-white-color: #FFFFFF,
+  background-color: #FFFFFF,
+  text-color: #222222,
+  shadow-color: rgba(47, 56, 20, 0.1),
+  delete-color: rgb(222, 42, 42),
+  delete-color-hover: darken(rgb(222, 42, 42), 10%),
+  font:'Roboto',
+);
+
+// Colores para el tema oscuro
+$theme-dark: (
+  primary-color: #A4C639,        // Verde más claro para contraste
+  primary-color-hover: lighten(#A4C639, 10%),
+  secondary-color: #FFA500,      // Naranja más brillante
+  secondary-color-hover: darken(#FFA500, 10%),
+  primary-black-color: #FFFFFF,
+  primary-black-color-hover: #bfbebe,
+  primary-white-color: #222222,
+  background-color: #121212,
+  text-color: #FFFFFF,
+  shadow-color: rgba(0, 0, 0, 0.7),
+  delete-color: rgb(222, 42, 42),
+  delete-color-hover: darken(rgb(222, 42, 42), 10%),
+  font:'Roboto',
+);
+
+$themes: (
+  light: $theme-light,
+  dark: $theme-dark,
+);
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$font:'Roboto', sans-serif;
+
+theme(primary-color): #74873D; // Verde principal
+theme(secondary-color): #ED8B00; // Naranja secundario
+
+theme(primary-black-color): #222222;
+mixins.theme(primary-white-color): #FFFFFF;
+
+mixins.theme(shadow-color): #2F3814; // Sombra basada en un verde oscuro*/

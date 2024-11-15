@@ -1,0 +1,384 @@
+// src/pages/tiendaFisica.scss
+@use "../abstract/variables" as variables;
+@use '../abstract/mixins' as mixins;
+
+.tienda-fisica {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: mixins.theme(primary-white-color); // Usa una variable de color de fondo
+
+          /* Sección del Mapa */
+          .map-section {
+            margin-bottom: 60px;
+
+            h2 {
+                text-align: center;
+                font-size: 2.5em;
+                color: mixins.theme(primary-color);
+                margin-bottom: 35px;
+                transition: color 0.3s ease;
+
+                &:hover {
+                color: mixins.theme(secondary-color);
+                }
+
+                @media (max-width: 768px) {
+                font-size: 2em;
+                }
+                @media (max-width: 480px) {
+                font-size: 1.8em;
+                }
+            }
+
+            .map-container {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin-bottom: 20px;
+
+                iframe {
+                    width: 100%;
+                    max-width: 800px;
+                    height: 450px;
+                    border: 0;
+                    border-radius: 15px;
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                    transition: transform 0.3s ease;
+                
+                    &:hover {
+                        transform: scale(1.02); // Suave escala al hover
+                    }
+                
+                    @media (max-width: 1080px) {
+                        height: 400px;
+                    }
+                
+                    @media (max-width: 768px) {
+                        height: 300px;
+                    }
+                
+                    @media (max-width: 480px) {
+                        height: 220px; // Ajustar altura para móviles
+                    }
+                }
+
+                /* Opcional: Añadir un overlay con información adicional */
+                /* 
+                .map-overlay {
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    background: rgba(255, 255, 255, 0.95);
+                    padding: 12px 20px;
+                    border-radius: 8px;
+                    font-size: 1em;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    align-items: center;
+                    transition: background 0.3s ease;
+                    color: theme(primary-color);
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 1);
+                    }
+
+                @media (max-width: 768px) {
+                    font-size: 0.95em;
+                }
+                @media (max-width: 480px) {
+                    font-size: 0.9em;
+                }
+                } */
+            }
+
+        .cta-button.secondary {
+            background-color: mixins.theme(secondary-color);
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+
+            &:hover {
+            background-color: mixins.theme(shadow-color);
+            transform: translateY(-3px);
+            }
+
+            @media (max-width: 768px) {
+            padding: 12px 25px;
+            font-size: 1em;
+            }
+            @media (max-width: 480px) {
+            padding: 10px 20px;
+            font-size: 0.9em;
+            }
+        }
+        }
+
+  /* Sección de Ubicación */
+  .location-section {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h1 {
+      font-size: 3em;
+      color: mixins.theme(primary-color);
+      margin-bottom: 25px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: mixins.theme(secondary-color);
+      }
+
+      @media (max-width: 768px) {
+        font-size: 2.5em;
+      }
+      @media (max-width: 480px) {
+        font-size: 2.2em;
+      }
+    }
+
+    p {
+      font-size: 1.3em;
+      color: mixins.theme(primary-black-color);
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: mixins.theme(primary-color);
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.2em;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.1em;
+      }
+    }
+
+    .cta-button.primary {
+      background-color: mixins.theme(primary-color);
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+
+      &:hover {
+        background-color: mixins.theme(shadow-color);
+        transform: translateY(-3px);
+      }
+
+      @media (max-width: 768px) {
+        padding: 12px 25px;
+        font-size: 1em;
+      }
+      @media (max-width: 480px) {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+    /* Sección del Carrusel */
+    .carousel-section {
+        margin-bottom: 60px;
+
+        h2 {
+        text-align: center;
+        font-size: 2.5em;
+        color: mixins.theme(primary-color);
+        margin-bottom: 35px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: mixins.theme(secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            font-size: 2em;
+        }
+        @media (max-width: 480px) {
+            font-size: 1.8em;
+        }
+        }
+
+        .carousel {
+        .carousel-item {
+            position: relative;
+            outline: none; // Eliminar el borde al enfocar el slide
+            padding: 0 10px; // Espaciado entre slides
+
+            .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.02); // Suave escala al hover
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Aumentar sombra al hover
+            }
+
+            .carousel-image {
+                width: 100%;
+                height: 600px; // Aumentar altura para imágenes más alargadas
+                object-fit: cover;
+                transition: transform 0.3s ease;
+                border-radius: 15px;
+
+                @media (max-width: 1080px) {
+                height: 400px;
+                }
+                @media (max-width: 768px) {
+                height: 300px;
+                }
+                @media (max-width: 480px) {
+                height: 220px;
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.7); // Fondo más oscuro para mejor contraste
+                color: #fff;
+                padding: 25px;
+                opacity: 0;
+                transform: translateY(100%);
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                border-radius: 0 0 15px 15px;
+
+                h3 {
+                margin: 0;
+                font-size: 1.6em;
+                @media (max-width: 768px) {
+                    font-size: 1.4em;
+                }
+                @media (max-width: 480px) {
+                    font-size: 1.3em;
+                }
+                }
+
+                p {
+                margin: 12px 0 0;
+                font-size: 1.1em;
+                @media (max-width: 768px) {
+                    font-size: 1em;
+                }
+                @media (max-width: 480px) {
+                    font-size: 0.95em;
+                }
+                }
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+                transform: translateY(0); // Slide up al hacer hover
+            }
+            }
+        }
+
+        /* Ajustes de Slick Dots */
+        .slick-dots {
+            bottom: -35px;
+
+            li button:before {
+            font-size: 14px;
+            color: mixins.theme(primary-color);
+            opacity: 0.7;
+            transition: color 0.3s ease;
+            }
+
+            li.slick-active button:before {
+            color: mixins.theme(secondary-color);
+            opacity: 1;
+            }
+        }
+
+        /* Ajustes de Slick Arrow */
+        .slick-arrow {
+            &:before {
+            color: mixins.theme(primary-color);
+            font-size: 30px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+            }
+
+            &:hover:before {
+            opacity: 1;
+            color: mixins.theme(secondary-color);
+            }
+
+            /* Posición de las flechas en dispositivos móviles */
+            @media (max-width: 480px) {
+            top: 50%; // Centrar verticalmente
+            transform: translateY(-50%); // Ajustar transformación
+            font-size: 24px; // Reducir tamaño de fuente
+
+            &.slick-prev {
+                left: -5px; // Posicionar dentro de la pantalla
+                z-index: 2;
+            }
+
+            &.slick-next {
+                right: 5px; // Posicionar dentro de la pantalla
+                z-index: 2;
+            }
+            }
+        }
+        }
+
+
+        /* Animaciones generales */
+        .tienda-fisica {
+        .location-section,
+        .carousel-section,
+        .map-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        .carousel-section {
+            animation-delay: 0.3s;
+        }
+
+        .map-section {
+            animation-delay: 0.6s;
+        }
+        }
+
+        @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        /* Estilos para los botones de CTA */
+        .cta-button {
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(mixins.theme(primary-color), 0.5);
+            }
+        }
+    }
+}
+

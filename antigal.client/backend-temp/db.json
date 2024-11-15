@@ -1,0 +1,28 @@
+{
+  "contacto": [
+    {
+      "nombre": "Enzo",
+      "email": "enzopinottii@gmail.com",
+      "asunto": "Ejemplo",
+      "mensaje": "312312",
+      "fecha": "2024-11-08T20:55:52.512Z",
+      "id": "1"
+    },
+    {
+      "id": "bcca",
+      "nombre": "enzo",
+      "email": "enzopinotti@gmail.com",
+      "asunto": "Algo que no se",
+      "mensaje": "aasdasdasdas",
+      "fecha": "2024-11-09T06:01:58.356Z"
+    },
+    {
+      "id": "a420",
+      "nombre": "Enzo",
+      "email": "enzopinottii@gmail.com",
+      "asunto": "asdasda",
+      "mensaje": "asdadasasdas",
+      "fecha": "2024-11-09T06:06:41.483Z"
+    }
+  ]
+}

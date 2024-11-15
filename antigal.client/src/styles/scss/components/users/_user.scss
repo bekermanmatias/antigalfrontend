@@ -1,0 +1,452 @@
+///SCSS PARA LA VENTANA PERFIL
+@use "../../abstract/variables" as variables;
+@use '../../abstract/mixins' as mixins;
+
+
+
+.user-layout {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  .mobile-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: auto;
+    background-color: mixins.theme(primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    button {
+      background-color: mixins.theme(primary-color);
+      border: none;
+      cursor: pointer;
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .user-sidebar {
+    width: 25%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    background-color: mixins.theme(primary-white-color);
+    padding-top: 20px;
+
+    .user-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .user-profile-img {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 5px solid mixins.theme(primary-color);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .user-profile-text {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid darken(#f0f1f6, 5%);
+        h2 {
+          color: mixins.theme(primary-black-color-hover);
+          font-weight: 600;
+          padding-bottom: 2px;
+        }
+        p {
+          color: mixins.theme(primary-black-color-hover);
+          font-weight: 400;
+        }
+      }
+    }
+
+    .sidebar-list {
+      width: 100%;
+      li {
+        width: 100%;
+        height: 50px;
+        &:hover {
+          background-color: darken(#f0f1f6, 5%);
+        }
+        a {
+          padding: 20px;
+          height: 50px;
+          width: 100%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          font-size: 16pt;
+
+          color: mixins.theme(primary-black-color);
+          &.active {
+            font-size: 18pt;
+            color: mixins.theme(primary-color);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .content-container {
+    width: 75%;
+    .user-background {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .profile-page {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: fit-content;
+        min-height: 70%;
+        background-color: mixins.theme(primary-white-color);
+        border-radius: 20px;
+        align-items: flex-start;
+        box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1),
+          /* Sombra derecha */ -2px 0 3px rgba(0, 0, 0, 0.1),
+          /* Sombra izquierda */ 0 2px 3px rgba(0, 0, 0, 0.1),
+          /* Sombra inferior */ 0 -2px 3px rgba(0, 0, 0, 0.1);
+        .profile-header {
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          height: 150px;
+          padding-top: 20px;
+          .header-data {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            height: auto;
+            padding-left: 30px;
+            .img-container {
+              width: 120px;
+              height: 120px;
+              overflow: hidden;
+              border-radius: 50%;
+              border: 5px solid theme(primary-color);
+              position: relative;
+              cursor: pointer;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+              &:hover .overlay {
+                opacity: 1;
+              }
+            }
+            .header-info {
+              padding-left: 10px;
+            }
+          }
+
+          .btn-container {
+            width: 25%;
+            padding-right: 25px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            button {
+              background-color: mixins.theme(primary-color);
+              border: none;
+              width: 100px;
+              height: 40px;
+              border-radius: 8px;
+              color: white;
+              font-size: 11pt;
+              cursor: pointer;
+              &:hover {
+                background-color: mixins.theme(primary-color-hover);
+              }
+            }
+          }
+        }
+
+        .profile-detail {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          height: 80%;
+          padding: 20px 30px;
+          .user-detail {
+            width: 50%;
+            height: calc(100% / 4);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            .user-label {
+              color: mixins.theme(primary-black-color-hover);
+              font-weight: 500;
+              width: 70%;
+              padding-bottom: 5px;
+            }
+            .user-info {
+              color: mixins.theme(primary-black-color);
+              font-size: 13pt;
+              width: 70%;
+              padding-bottom: 5px;
+            }
+            input {
+              border: none;
+              background-color: mixins.theme(primary-black-color-hover);
+              border-radius: 8px;
+              font-size: 13pt;
+              width: 70%;
+              height: 40px;
+              padding: 10px;
+            }
+            select {
+              border: none;
+              background-color: mixins.theme(primary-black-color-hover);
+              border-radius: 8px;
+              font-size: 13pt;
+              width: 70%;
+              height: 40px;
+              padding: 10px;
+            }
+          }
+        }
+
+        .modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 2001;
+          .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            height: 200px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para el modal */
+            z-index: 2002;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .top {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              padding-bottom: 10px;
+              button {
+                width: 30px;
+                height: 30px;
+                background-color: white;
+
+                border: none;
+                cursor: pointer;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+            .bottom {
+              display: flex;
+              width: 100%;
+              justify-content: space-around;
+
+              button {
+                background-color: mixins.theme(primary-color);
+                border: none;
+                width: 100px;
+                height: 40px;
+                border-radius: 8px;
+                color: white;
+                font-size: 11pt;
+                cursor: pointer;
+                &:hover {
+                  background-color: mixins.theme(primary-color-hover);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .user-layout {
+    
+    .mobile-sidebar {
+      height: 100%;
+    }
+    .user-sidebar {
+      width: 30%;
+
+      .user-content {
+        
+        .user-profile-text {
+          h2 {
+            font-size: 18pt !important;
+          }
+        }
+      }
+      a {
+        font-size: 14pt !important;
+      }
+    }
+    .content-container {
+      width: 100%;
+    }
+    .profile-page {
+      width: 70% !important;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .user-layout {
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2000;
+    }
+    .mobile-sidebar {
+      position: absolute; // para que se superponga en el mismo espacio
+      top: 0;
+      right: 0; // ajuste según la posición deseada
+       // ocupa el ancho completo si es necesario
+       // toma todo el alto de la pantalla
+      height: 100%; // asegura que no sobrepase la pantalla
+      visibility: visible;
+      z-index: 1999; 
+    }
+    .user-sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Oculta inicialmente */
+      width: 250px;
+      height: 100%;
+      transition: left 0.3s ease; /* Animación para el despliegue */
+      z-index: 3001;
+      &.open{
+        left: 0;
+      }
+      .user-profile-img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .content-container {
+      .user-background {
+        height: fit-content !important;
+        margin-left: 30px;
+      }
+      .profile-page {
+        height: fit-content !important;
+        padding: 5px;
+        margin: 0px!important;
+        width: 80% !important;
+        .profile-header {
+          flex-direction: column-reverse;
+          height: auto !important;
+          padding: 0px !important;
+          .header-data {
+            width: 100% !important;
+            .img-container {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .btn-container {
+            margin-left: auto;
+            padding-top: 5px !important;
+            .edit-profile-button {
+              background-color: theme(primary-color);
+              width: 100px !important;
+            }
+          }
+        }
+        .profile-detail {
+          .user-detail {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .user-layout {
+    
+    .user-sidebar {
+      .user-profile-img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .content-container {
+      .profile-page {
+     
+        width: 80% !important;
+        .profile-header {
+          .header-data {
+            .img-container {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

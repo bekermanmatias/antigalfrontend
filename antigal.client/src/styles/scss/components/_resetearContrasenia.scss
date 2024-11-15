@@ -1,0 +1,140 @@
+// src/pages/resetearContrasenia.scss
+@use 'sass:color';
+
+@use "../abstract/variables" as variables;
+@use '../abstract/mixins' as mixins;
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .auth-container {
+    background-color: rgba(mixins.theme(primary-white-color), 0.9);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    max-width: 90%;
+    animation: fadeInUp 0.6s ease-out forwards;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: mixins.theme(primary-black-color);
+      font-size: 2em;
+      font-weight: 500;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .form-group {
+        margin-bottom: 20px;
+
+        label {
+          display: block;
+          margin-bottom: 8px;
+          color: mixins.theme(primary-black-color);
+          font-weight: 500;
+        }
+
+        input {
+          width: 100%;
+          padding: 12px 15px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 1em;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            border-color: mixins.theme(primary-color);
+            outline: none;
+          }
+        }
+      }
+
+      .cta-button {
+        &.primary {
+          background-color: mixins.theme(primary-color);
+          color: mixins.theme(primary-white-color);
+          border: none;
+          padding: 12px;
+          border-radius: 8px;
+          font-size: 1em;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+          &:hover {
+            background-color: mixins.theme(shadow-color);
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+
+    .auth-links {
+      margin-top: 15px;
+      text-align: center;
+
+      a {
+        color: mixins.theme(secondary-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: mixins.theme(shadow-color);
+        }
+      }
+    }
+
+    .mensaje-exito {
+      margin-top: 20px;
+      color: green;
+      text-align: center;
+    }
+
+    .mensaje-error {
+      margin-top: 20px;
+      color: red;
+      text-align: center;
+    }
+  }
+  .password-input-wrapper {
+    position: relative;
+  }
+  
+  .password-input-wrapper input {
+    padding-right: 40px; /* Espacio para el botón del ojo */
+  }
+  
+  .password-input-wrapper .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .toggle-password img {
+    width: 30px;
+  }
+  
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

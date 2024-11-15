@@ -1,0 +1,157 @@
+@use "../../abstract/variables" as variables;
+@use '../../abstract/mixins' as mixins;
+
+
+.user-background {
+    .favorites-container {
+      width: 100%;
+      min-height: 100vh;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  
+      .favorite-list {
+        width: 100% !important;
+        .product-list {
+          width: 100% !important;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 0 1.3rem;
+          flex-wrap: wrap;
+  
+          .product-item {
+            width: calc(100% / 3) !important; // 3 columnas en pantallas grandes
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0; // Alineación de márgenes verticales
+            overflow: hidden;
+            position: relative;
+            justify-content: space-evenly;
+            padding: 20px;
+  
+            article {
+              width: 100%;
+              background-color: rgba(116, 135, 61, 0.2); // Usar rgba para un fondo semitransparente
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              padding: 20px 10px; // Uso de padding simplificado
+              border-radius: 15px;
+  
+              img {
+                width: calc(100% * 1.05) !important; // Aumentar el tamaño de la imagen
+                height: auto !important; // Mantener la altura automática
+                object-fit: cover !important;
+                border-radius: 15px;
+                aspect-ratio: 3 / 4;
+                max-height: 200px; // Limitar la altura máxima
+              }
+  
+              .actions {
+                display: flex; // Asegurarse de que el contenedor esté visible
+                align-items: center; // Centrando verticalmente
+                margin-left: 10px; // Espacio entre imagen y botón
+              }
+  
+              .like-button {
+                background: none; // Sin fondo
+                border: none; // Sin borde
+                cursor: pointer; // Cambia el cursor al pasar por encima
+                padding: 0; // Sin padding
+  
+                img {
+                  width: 24px!important; // Ajustar el tamaño del icono
+                  height: 24px!important;
+                  object-fit: contain!important; // Ajustar el tamaño del icono
+                }
+              }
+            }
+  
+            .info {
+              padding: 10px;
+              text-align: center; // Centralizar texto de manera global
+  
+              h3 {
+                min-height: 75px;
+                margin: 5px 0; // Margen global para h3
+              }
+  
+              .category,
+              .offerPrice {
+                margin: 5px 0;
+              }
+  
+              .precioAnterior {
+                text-decoration: line-through;
+                color: #888;
+              }
+  
+              .precioOferta {
+                color: black;
+                font-weight: bold;
+  
+                &.onSale {
+                  color: #4CAF50;
+                }
+              }
+            }
+  
+            .buttonsContainer {
+              display: flex;
+              justify-content: center;
+              font-size: 0.8rem !important;
+              user-select: none;
+  
+              .cartButton,
+              .cartDeleteButton {
+                width: fit-content;
+                min-width: 160px;
+                height: 40px;
+                display: flex;
+                justify-content: space-evenly;
+                padding: none!important;
+                border-radius: 0.45rem;
+                align-items: center; // Alineación vertical centrada
+  
+                img {
+                  width: auto!important;
+                  height: 18px!important;
+                  object-fit: contain!important;
+                 
+                }
+              }
+  
+              .cartButton {
+                padding: 0px!important;
+                background-color: mixins.theme(primary-color);
+                color: mixins.theme(primary-white-color);
+              }
+  
+              .cartDeleteButton {
+                color: mixins.theme(secondary-color);
+                border: 2px solid mixins.theme(secondary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    // Media query para dispositivos móviles
+    @media (max-width: 768px) {
+      .favorites-container {
+        .favorite-list {
+          .product-list {
+            .product-item {
+              width: 100% !important; 
+              padding: 30px;// Cambia a una sola columna en móviles
+            }
+          }
+        }
+      }
+    }
+  }
+  

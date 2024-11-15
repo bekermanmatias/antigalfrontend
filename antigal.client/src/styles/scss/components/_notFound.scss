@@ -1,0 +1,33 @@
+@use "../abstract/variables" as variables;
+@use '../abstract/mixins' as mixins;
+
+.not-found{
+    width: 100%;
+    height:calc(100vh - 100px) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1, p{
+        color:mixins.theme(primary-black-color);
+        padding-bottom:10px ;
+    }
+    a{ 
+        background-color: mixins.theme(primary-color);
+        padding: 0.5rem 1.4rem;
+        border-radius: 20px;
+        border: none;
+        bottom: 4rem;
+        color: mixins.theme(primary-white-color);
+        font-weight: 900;
+        text-decoration: none;
+        &:hover {
+            background-color: mixins.theme(primary-color-hover);
+        }
+    }
+    
+    video{
+        height:150px;
+        width: auto;
+    }
+}

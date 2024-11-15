@@ -1,0 +1,164 @@
+@use "../../abstract/variables" as variables;
+@use '../../abstract/mixins' as mixins;
+
+
+.orders-page {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .order-list {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    .order {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f1f6;
+      box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1),
+        /* Sombra derecha */ -2px 0 3px rgba(0, 0, 0, 0.1),
+        /* Sombra izquierda */ 0 2px 3px rgba(0, 0, 0, 0.1),
+        /* Sombra inferior */ 0 -2px 3px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 15px;
+      .order-header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid darken(#f0f1f6, 40%);
+        padding-bottom: 10px;
+      }
+      .order-detail {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .item-order {
+          width: 100%;
+          height: auto;
+          display: flex;
+          gap: 30px;
+          .img-container {
+            height: 60px;
+            width: 60px;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 8px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .product-info {
+            height: 60px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            a {
+              color: mixins.theme(primary-black-color);
+              font-weight: 500;
+              text-decoration: none;
+              &:hover {
+                color: mixins.theme(primary-color);
+              }
+            }
+          }
+        }
+      }
+
+      .order-footer {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid darken(#f0f1f6, 40%);
+        padding-top: 10px;
+        a {
+          height: 40px;
+          width: auto;
+          background-color: mixins.theme(primary-color);
+          display: flex;
+          align-items: center;
+          border-radius: 8px;
+          padding: 0px 10px;
+          color: white;
+          font-weight: 600;
+          font-size: 11pt;
+          text-decoration: none;
+          cursor: pointer;
+          &:hover {
+            background-color: mixins.theme(primary-color-hover);
+            color: mixins.theme(primary-color);
+          }
+        }
+        button {
+          height: 40px;
+          width: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          border: none;
+          background-color: mixins.theme(primary-color-hover);
+          color: mixins.theme(primary-color);
+          font-weight: 600;
+          font-size: 11pt;
+          border-radius: 8px;
+          padding: 0px 10px;
+          cursor: pointer;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          &:hover {
+            background-color: mixins.theme(primary-color);
+            color: mixins.theme(primary-color-hover);
+            .repeat-icon {
+              content: url("/public/icons/repeat-white.svg");
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    .order-footer {
+        button{
+            width: 120px!important;
+            font-weight: 500!important;
+            font-size: 0.8em!important;
+        }
+        a{
+            width: 120px!important;
+            font-weight: 500!important;
+            font-size: 0.8em!important;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+}
